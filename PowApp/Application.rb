@@ -6,10 +6,15 @@
 #
 
 class Application
-  def initialize(path)
-    @path = path
-    find_icon
-    generate_name
+  def initialize(path, is_app = true)
+    if is_app
+      @path = path
+      find_icon
+      generate_name
+    else
+      @name = path
+      default_icon
+    end
   end
   
   def path
@@ -21,7 +26,11 @@ class Application
   end
   
   def name
-    "#{@raw_name}.dev"
+    if defined? @name
+      @name
+    else
+      "#{@raw_name}.dev"
+    end
   end
   
   def raw_name
@@ -35,14 +44,27 @@ class Application
     File.rename(@path, new_path.join('/').gsub(' ', '').downcase)
   end
   
+  def open_url
+    url = NSURL.URLWithString("http://#{name}/")
+    NSWorkspace.sharedWorkspace.openURL(url)
+  end
+  
+  def delete
+    File.unlink(path)
+  end
+  
   private
   def find_icon
     icon_file = [@path, 'public', 'favicon.ico'].join('/')
     if File.exists?(icon_file)
       @icon = NSImage.alloc.initWithContentsOfFile icon_file
     else
-      @icon = NSImage.imageNamed 'application'
+      default_icon
     end
+  end
+  
+  def default_icon
+    @icon = NSImage.imageNamed 'application'
   end
   
   def generate_name

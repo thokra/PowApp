@@ -5,22 +5,36 @@
 #  Created by Thomas Siegfried Krampl on 4/23/11.
 #
 
-class ApplicationSettingsController < NSWindow
-  attr_accessor :path, :name, :parent
+class ApplicationSettingsController < NSWindowController
+  attr_accessor :path, :name
   
-  def windowShouldClose(sender)
-    self.orderOut(nil)
+  def init
+    initWithWindowNibName "ApplicationSettings"
   end
   
-  def load_application(app)
-    @app = app
+  def windowDidLoad
+    update_window
+  end
+  
+  def update_window
     @path.stringValue = File.readlink(@app.path)
     @name.stringValue = @app.raw_name
   end
   
+  def cancel(sender)
+    close
+  end
+   
+  def load_application(app, parent)
+    @app = app
+    @parent = parent
+    showWindow(@parent)
+    update_window if windowLoaded?
+  end
+  
   def save_app(sender)
     @app.update_path_name(@name.stringValue)
-    windowShouldClose(nil)
+    close
     @parent.refresh(nil)
   end
 end

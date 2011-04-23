@@ -20,13 +20,13 @@
 		96120F65135BA567000B3E73 /* bar_stop.png in Resources */ = {isa = PBXBuildFile; fileRef = 96120F5B135BA567000B3E73 /* bar_stop.png */; };
 		963F701713545CB3006E38AB /* SettingsController.rb in Resources */ = {isa = PBXBuildFile; fileRef = 963F701613545CB3006E38AB /* SettingsController.rb */; };
 		963F701A135460EB006E38AB /* icons.icns in Resources */ = {isa = PBXBuildFile; fileRef = 963F7019135460EB006E38AB /* icons.icns */; };
+		964F44E01362B9BA008EADA7 /* ApplicationSettings.xib in Resources */ = {isa = PBXBuildFile; fileRef = 964F44DF1362B9BA008EADA7 /* ApplicationSettings.xib */; };
 		9698E3F313541C3A00F2EE1F /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9698E3F213541C3A00F2EE1F /* Cocoa.framework */; };
 		9698E3F513541C3A00F2EE1F /* MacRuby.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9698E3F413541C3A00F2EE1F /* MacRuby.framework */; };
 		9698E3FC13541C3A00F2EE1F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9698E3FA13541C3A00F2EE1F /* InfoPlist.strings */; };
 		9698E3FF13541C3A00F2EE1F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9698E3FE13541C3A00F2EE1F /* main.m */; };
 		9698E40313541C3B00F2EE1F /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9698E40113541C3B00F2EE1F /* MainMenu.xib */; };
 		9698E40613541C3B00F2EE1F /* rb_main.rb in Resources */ = {isa = PBXBuildFile; fileRef = 9698E40513541C3B00F2EE1F /* rb_main.rb */; };
-		9698E40813541C3B00F2EE1F /* AppDelegate.rb in Resources */ = {isa = PBXBuildFile; fileRef = 9698E40713541C3B00F2EE1F /* AppDelegate.rb */; };
 		9698E41313541F3700F2EE1F /* ApplicationController.rb in Resources */ = {isa = PBXBuildFile; fileRef = 9698E41213541F3700F2EE1F /* ApplicationController.rb */; };
 		96CFC52513570698006A499A /* Application.rb in Resources */ = {isa = PBXBuildFile; fileRef = 96CFC52413570698006A499A /* Application.rb */; };
 /* End PBXBuildFile section */
@@ -45,6 +45,7 @@
 		96120F5B135BA567000B3E73 /* bar_stop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bar_stop.png; sourceTree = "<group>"; };
 		963F701613545CB3006E38AB /* SettingsController.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = SettingsController.rb; sourceTree = "<group>"; };
 		963F7019135460EB006E38AB /* icons.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = icons.icns; sourceTree = "<group>"; };
+		964F44DF1362B9BA008EADA7 /* ApplicationSettings.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ApplicationSettings.xib; sourceTree = "<group>"; };
 		9698E3EE13541C3A00F2EE1F /* PowApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PowApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9698E3F213541C3A00F2EE1F /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		9698E3F413541C3A00F2EE1F /* MacRuby.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MacRuby.framework; path = System/Library/Frameworks/MacRuby.framework; sourceTree = SDKROOT; };
@@ -54,7 +55,6 @@
 		9698E3FE13541C3A00F2EE1F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		9698E40213541C3B00F2EE1F /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		9698E40513541C3B00F2EE1F /* rb_main.rb */ = {isa = PBXFileReference; lastKnownFileType = text.script.ruby; path = rb_main.rb; sourceTree = "<group>"; };
-		9698E40713541C3B00F2EE1F /* AppDelegate.rb */ = {isa = PBXFileReference; lastKnownFileType = text.script.ruby; path = AppDelegate.rb; sourceTree = "<group>"; };
 		9698E41213541F3700F2EE1F /* ApplicationController.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = ApplicationController.rb; sourceTree = "<group>"; };
 		96CFC52413570698006A499A /* Application.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = Application.rb; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -103,7 +103,6 @@
 			children = (
 				96CFC5221357068A006A499A /* Models */,
 				9698E41113541F1D00F2EE1F /* Controllers */,
-				9698E40713541C3B00F2EE1F /* AppDelegate.rb */,
 				9698E40013541C3B00F2EE1F /* Resources */,
 				9698E40413541C3B00F2EE1F /* Other Sources */,
 				9698E3F813541C3A00F2EE1F /* Supporting Files */,
@@ -136,6 +135,7 @@
 				96120F5A135BA567000B3E73 /* bar_start.png */,
 				96120F5B135BA567000B3E73 /* bar_stop.png */,
 				9698E40113541C3B00F2EE1F /* MainMenu.xib */,
+				964F44DF1362B9BA008EADA7 /* ApplicationSettings.xib */,
 				963F7019135460EB006E38AB /* icons.icns */,
 			);
 			name = Resources;
@@ -234,7 +234,6 @@
 				9698E3FC13541C3A00F2EE1F /* InfoPlist.strings in Resources */,
 				9698E40313541C3B00F2EE1F /* MainMenu.xib in Resources */,
 				9698E40613541C3B00F2EE1F /* rb_main.rb in Resources */,
-				9698E40813541C3B00F2EE1F /* AppDelegate.rb in Resources */,
 				9698E41313541F3700F2EE1F /* ApplicationController.rb in Resources */,
 				963F701713545CB3006E38AB /* SettingsController.rb in Resources */,
 				963F701A135460EB006E38AB /* icons.icns in Resources */,
@@ -250,6 +249,7 @@
 				96120F64135BA567000B3E73 /* bar_start.png in Resources */,
 				96120F65135BA567000B3E73 /* bar_stop.png in Resources */,
 				96087CB2136282530074E980 /* ApplicationSettingsController.rb in Resources */,
+				964F44E01362B9BA008EADA7 /* ApplicationSettings.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
