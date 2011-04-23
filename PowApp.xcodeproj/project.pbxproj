@@ -46,7 +46,7 @@
 		963F701613545CB3006E38AB /* SettingsController.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = SettingsController.rb; sourceTree = "<group>"; };
 		963F7019135460EB006E38AB /* icons.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = icons.icns; sourceTree = "<group>"; };
 		964F44DF1362B9BA008EADA7 /* ApplicationSettings.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ApplicationSettings.xib; sourceTree = "<group>"; };
-		9698E3EE13541C3A00F2EE1F /* PowApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PowApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9698E3EE13541C3A00F2EE1F /* PowApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = PowApp.app; path = "/Users/tkramp01/Real Native/Powder/build/Release/PowApp.app"; sourceTree = "<absolute>"; };
 		9698E3F213541C3A00F2EE1F /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		9698E3F413541C3A00F2EE1F /* MacRuby.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MacRuby.framework; path = System/Library/Frameworks/MacRuby.framework; sourceTree = SDKROOT; };
 		9698E3F913541C3A00F2EE1F /* PowApp-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PowApp-Info.plist"; sourceTree = "<group>"; };
@@ -84,7 +84,6 @@
 		9698E3EF13541C3A00F2EE1F /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				9698E3EE13541C3A00F2EE1F /* PowApp.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
