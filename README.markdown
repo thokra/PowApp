@@ -2,7 +2,7 @@ PowApp
 ======
 PowApp is a graphical interface for [Pow](http://pow.cx) written in MacRuby. Icons from the Tango Project.
 
-[Download PowApp](https://github.com/downloads/Terw/PowApp/PowApp.zip)
+[Download PowApp](https://github.com/downloads/Terw/PowApp/PowApp-v0.1.zip)
 
 Why a GUI?
 ----------
