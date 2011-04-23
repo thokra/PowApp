@@ -1,9 +1,9 @@
 #
 #  rb_main.rb
-#  Powder
+#  PowApp
 #
-#  Created by Thomas Siegfried Krampl on 4/18/11.
-#  Copyright (c) 2011 Sermo AS. All rights reserved.
+#  Created by Thomas Siegfried Krampl on 4/12/11.
+#  Copyright (c) 2011 __MyCompanyName__. All rights reserved.
 #
 
 # Loading the Cocoa framework. If you need to load more frameworks, you can
